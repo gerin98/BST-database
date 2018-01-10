@@ -1,100 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="100">
-  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
-      <itemPath>DBentry.h</itemPath>
-      <itemPath>TreeDB.h</itemPath>
-      <itemPath>TreeNode.h</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
-                   projectFiles="true">
-    </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
-      <itemPath>DBentry.cpp</itemPath>
-      <itemPath>Main.cpp</itemPath>
-      <itemPath>TreeDB.cpp</itemPath>
-      <itemPath>TreeNode.cpp</itemPath>
-    </logicalFolder>
-    <logicalFolder name="TestFiles"
-                   displayName="Test Files"
-                   projectFiles="false"
-                   kind="TEST_LOGICAL_FOLDER">
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false"
-                   kind="IMPORTANT_FILES_FOLDER">
-      <itemPath>Makefile</itemPath>
-    </logicalFolder>
-  </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
       <toolsSet>
-        <compilerSet>default</compilerSet>
-        <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
       </toolsSet>
-      <compileType>
-        <ccTool>
-          <standard>8</standard>
-        </ccTool>
-      </compileType>
-      <item path="DBentry.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="DBentry.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TreeDB.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TreeDB.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TreeNode.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TreeNode.h" ex="false" tool="3" flavor2="0">
-      </item>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_signals>
+        </gdb_signals>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
-        <compilerSet>default</compilerSet>
-        <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
       </toolsSet>
-      <compileType>
-        <cTool>
-          <developmentMode>5</developmentMode>
-        </cTool>
-        <ccTool>
-          <developmentMode>5</developmentMode>
-          <standard>8</standard>
-        </ccTool>
-        <fortranCompilerTool>
-          <developmentMode>5</developmentMode>
-        </fortranCompilerTool>
-        <asmTool>
-          <developmentMode>5</developmentMode>
-        </asmTool>
-      </compileType>
-      <item path="DBentry.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="DBentry.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TreeDB.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TreeDB.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="TreeNode.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="TreeNode.h" ex="false" tool="3" flavor2="0">
-      </item>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
     </conf>
   </confs>
 </configurationDescriptor>
